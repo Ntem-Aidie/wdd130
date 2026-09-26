@@ -1,3 +1,11 @@
+:root {
+    --primary-color: darkblue;
+    --border-color: black;
+    --img-width: 150px;
+    --base-padding: 10px;
+    --text-center: center;
+}
+
 main {
     max-width: 840px;
 }
@@ -9,7 +17,7 @@ aside {
     padding: 1rem;
     background-color: #333;
     color: #eee;
-    text-align: center;
+    text-align: var(--text-center);
 
 }
 
@@ -19,16 +27,39 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: var(--img-width);
     height: auto;
-}
-
-p {
-    padding: 0;
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    border-top: 1px solid var(--border-color);
+    text-align: var(--text-center);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(var(--base-padding));
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+img {
+    width: var(--img-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: var(--base-paddingS);
 }
